@@ -1,6 +1,7 @@
 import Navbar from '@/components/navbar';
-import { Tabs, FadeInDiv } from '@/components/ui/tabs';
+import { Tabs } from '@/components/ui/tabs';
 import React from 'react';
+import ChartLearn from '@/components/charts/learn';
 
 type Props = {};
 
@@ -15,7 +16,9 @@ function Dashboard({}: Props) {
             title: 'Tab 1',
             value: 'tab1',
             content: (
-              <div className="w-full h-screen bg-primary-foreground rounded-md shadow-md border"></div>
+              <div className="w-full h-screen bg-primary-foreground rounded-md shadow-md border">
+                <ChartLearn />
+              </div>
             ),
           },
           {
